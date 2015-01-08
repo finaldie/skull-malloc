@@ -30,7 +30,7 @@ install:
 	test -d $(prefix)/include/skull || mkdir -p $(prefix)/include/skull
 	test -f $(STATIC_LIB) && cp $(STATIC_LIB) $(prefix)/lib
 	test -f $(DYNAMIC_LIB) && cp $(DYNAMIC_LIB) $(prefix)/lib
-	test -f malloc.c && cp malloc.c $(prefix)/include/skull
+	test -f malloc.h && cp malloc.h $(prefix)/include/skull
 
 clean:
 	rm -f $(STATIC_LIB) $(DYNAMIC_LIB) $(OBJS)
